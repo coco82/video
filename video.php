@@ -104,6 +104,16 @@ $app->post('/register', function() use ($app) {
     }
 });
 
+// 2nd page
+$app->get('/base', function() use ($app) {
+    $app->render('base.html.twig');
+});
+
+
+// 3rt Page
+$app->get('/products', function() use ($app) {
+    $app->render('products.html.twig');
+});
 
 
 $app->run();

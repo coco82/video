@@ -1,14 +1,14 @@
 <?php
 
-/* register.html.twig */
-class __TwigTemplate_bad9f3f9ef7bb6cc18cfd77633e467e37a8c076747f1d37693fa4259450ab0c8 extends Twig_Template
+/* base.html.twig */
+class __TwigTemplate_e54b7e02086b01b01f31a17243d4a40f1da8d8499e27c6f953df27ecb623f777 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
     {
         parent::__construct($env);
 
         // line 1
-        $this->parent = $this->loadTemplate("master.html.twig", "register.html.twig", 1);
+        $this->parent = $this->loadTemplate("master.html.twig", "base.html.twig", 1);
         $this->blocks = array(
             'title' => array($this, 'block_title'),
             'headextra' => array($this, 'block_headextra'),
@@ -82,17 +82,11 @@ class __TwigTemplate_bad9f3f9ef7bb6cc18cfd77633e467e37a8c076747f1d37693fa4259450
         // line 28
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["v"]) ? $context["v"] : null), "name", array()), "html", null, true);
         echo "\"><br>
-        Email: <input type=\"email\" name=\"email\" value=\"";
-        // line 29
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["v"]) ? $context["v"] : null), "email", array()), "html", null, true);
-        echo "\"><span id=\"isTaken\"></span><br>
-        Password: <input type=\"password\" name=\"pass1\"><br>
-        Password (repeated): <input type=\"password\" name=\"pass2\"><br>
-        <input type=\"submit\" value=\"Register\">
+      
     </form>
 
         <p class=\"important\">
-        Welcome on my awesome homepage.
+        Other page.
     </p>
         
 ";
@@ -100,7 +94,7 @@ class __TwigTemplate_bad9f3f9ef7bb6cc18cfd77633e467e37a8c076747f1d37693fa4259450
 
     public function getTemplateName()
     {
-        return "register.html.twig";
+        return "base.html.twig";
     }
 
     public function isTraitable()
@@ -110,7 +104,7 @@ class __TwigTemplate_bad9f3f9ef7bb6cc18cfd77633e467e37a8c076747f1d37693fa4259450
 
     public function getDebugInfo()
     {
-        return array (  87 => 29,  83 => 28,  79 => 26,  75 => 24,  66 => 22,  62 => 21,  59 => 20,  56 => 19,  53 => 18,  39 => 6,  36 => 5,  30 => 3,  11 => 1,);
+        return array (  83 => 28,  79 => 26,  75 => 24,  66 => 22,  62 => 21,  59 => 20,  56 => 19,  53 => 18,  39 => 6,  36 => 5,  30 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -151,16 +145,13 @@ class __TwigTemplate_bad9f3f9ef7bb6cc18cfd77633e467e37a8c076747f1d37693fa4259450
 
     <form method=\"post\">
         Name: <input type=\"text\" name=\"name\" value=\"{{v.name}}\"><br>
-        Email: <input type=\"email\" name=\"email\" value=\"{{v.email}}\"><span id=\"isTaken\"></span><br>
-        Password: <input type=\"password\" name=\"pass1\"><br>
-        Password (repeated): <input type=\"password\" name=\"pass2\"><br>
-        <input type=\"submit\" value=\"Register\">
+      
     </form>
 
         <p class=\"important\">
-        Welcome on my awesome homepage.
+        Other page.
     </p>
         
-{% endblock %}", "register.html.twig", "C:\\xampp\\htdocs\\video\\templates\\register.html.twig");
+{% endblock %}", "base.html.twig", "C:\\xampp\\htdocs\\video\\templates\\base.html.twig");
     }
 }
