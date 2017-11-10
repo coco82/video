@@ -37,6 +37,7 @@ $app = new \Slim\Slim(array(
     'view' => new \Slim\Views\Twig()
         ));
 
+// Array key to append
 $view = $app->view();
 $view->parserOptions = array(
     'debug' => true,
@@ -115,5 +116,9 @@ $app->get('/products', function() use ($app) {
     $app->render('products.html.twig');
 });
 
+// 4rt Page
+$app->get('/home', function() use ($app) {
+    $app->render('home.html.twig');
+});
 
 $app->run();
