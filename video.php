@@ -105,9 +105,14 @@ $app->post('/register', function() use ($app) {
     }
 });
 
+// Home
+$app->get('/home', function() use ($app) {
+    $app->render('home.html.twig');
+});
+
 // 2nd page
-$app->get('/base', function() use ($app) {
-    $app->render('base.html.twig');
+$app->get('/videos', function() use ($app) {
+    $app->render('videos.html.twig');
 });
 
 
@@ -117,8 +122,8 @@ $app->get('/products', function() use ($app) {
 });
 
 // 4rt Page
-$app->get('/home', function() use ($app) {
-    $app->render('home.html.twig');
+$app->get('/users', function() use ($app) {
+    $app->render('users.html.twig');
 });
 
 $app->run();

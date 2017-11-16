@@ -24,16 +24,22 @@
         </ul>
     {% endif %}
 
-    <form method="post">
-        Name: <input type="text" name="name" value="{{v.name}}"><br>
-        Email: <input type="email" name="email" value="{{v.email}}"><span id="isTaken"></span><br>
-        Password: <input type="password" name="pass1"><br>
-        Password (repeated): <input type="password" name="pass2"><br>
-        <input type="submit" value="Register">
-    </form>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">Register</div>
+                <div class="panel-body">
+                    <form method="post">
+                        Name: <input type="text" name="name" value="{{v.name}}"><br>
+                        Email: <input type="email" name="email" value="{{v.email}}" placeholder="you@domain.com"><span id="isTaken"></span><br>
+                        Password: <input type="password" name="pass1"><br>
+                        Password (repeated): <input type="password" name="pass2"><br>
+                        <input type="submit" value="Register">
+                    </form>
 
-        <p class="important">
-        Welcome on my awesome homepage.
-    </p>
-        
+                </div>
+            </div>
+        </div>
+    </div>
+
 {% endblock %}

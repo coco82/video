@@ -24,7 +24,7 @@ function nonsql_error_handler($params) {
     die;
 }
 
-// Slim creation and setup
+// Slim creation and setup // 
 $app = new \Slim\Slim(array(
     'view' => new \Slim\Views\Twig()
         ));
@@ -65,11 +65,20 @@ $app->get('/page2', function() use ($app) {
     echo 'Welcome to the page 2';
 });
 
+$app->get('/page3', function() use ($app) {
+    return '/base.html.twig';
+});
+
 //require_once 'account.php';
 
 //require_once 'admin.php';
 
 //require_once 'cart.php';
 
+//$view['HomeController'] = function ($view) {
+//    return new \App\Controllers\HomeController;
+//};
+//        
+//$spp->('/', 'HomeController:index');
 
 $app->run();

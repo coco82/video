@@ -1,0 +1,30 @@
+{% extends "master.html.twig" %}
+
+{% block title %}Videos{% endblock %}
+
+{% block content %}  
+<html>
+<head>
+<script type='text/javascript' src='jwplayer.js'></script>
+<title>Video Uploader</title>
+</head>
+<body>
+<h1>Video Uploader</h1>
+<form method='post' enctype='multipart/form-data'>
+Name:<input type='text' name='vid_name'><br />
+Video: <input type='video' name='vid'><br />
+<input type='submit'>
+<hr />
+<h3>View Videos</h3>
+<?php
+$result = mysql_query("SELECT * FROM vid_detail");
+while($row = mysql_fetch_array($result)){
+$name = $row['name'];
+$vid_code = $row['code'];
+echo'<h3>' . $name . '</h3><br />' . $vid_code . '<br />';
+}
+</body>
+</html>
+{% endblock %}
+
+

@@ -1,15 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">    
     <head>
-        <link href="/styles.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <meta charset="UTF-8">
         <title>{% block title %}Default{% endblock %}</title>
-        {% block headextra %}{% endblock %}
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link href="/css/bootstrap.min.css" type="text/css" rel="stylesheet" >
+        <link href="/css/stylesheet.css" type="text/css" rel="stylesheet">
+        {% block headextra %} {% endblock %}
     </head>
     <body>
+        <nav class="navbar navbar-custom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">Video Project</a>
+                </div>
+                <div class="form-inline nav navbar-nav navbar-right" style="padding: 12px;">
+                    <div class="input-group">
+                        <input type="search" placeholder="Search..." class="form-control">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Video 1</a></li>
+                    <li><a href="#">Video 2</a></li>
+                    <li><a href="#">Video 3</a></li>                    
+                </ul>                                                
+            </div>
+        </nav>
+        <header>
+            <div class="text-center">
+                <h1>VIDEO ARTURO ALVARADO</h1>
+                <p>Lorem ipsum dolores erratum</p>
+            </div>
+        </header>
+        {#=========================   ================================== #}
+
         <div id="centeredContent">
-            {% block content %}{% endblock %}
-        </div>
-    </body>
+        {% block content %}{% endblock %}
+    </div>
+    <footer>
+        <p class="text-center col-md-12"r style="padding-top: 10px">
+            <small>© Copyright Arturo Alvarado, 2017. All rights reserved.</small></p>
+    </footer>
+</body>
 </html>
