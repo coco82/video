@@ -110,6 +110,11 @@ $app->get('/home', function() use ($app) {
     $app->render('home.html.twig');
 });
 
+// Videos
+$app->get('/videos', function() use ($app) {
+    $app->render('videos.html.twig');
+});
+
 // 2nd page
 $app->get('/videos', function() use ($app) {
     $app->render('videos.html.twig');

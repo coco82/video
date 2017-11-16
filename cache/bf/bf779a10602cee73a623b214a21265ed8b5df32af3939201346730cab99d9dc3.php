@@ -65,14 +65,12 @@ class __TwigTemplate_87a86df006dd2202e643b264156f3e573238b8b43873d89825885252259
                 <p>Lorem ipsum dolores erratum</p>
             </div>
         </header>
-        ";
-        // line 42
-        echo "
+
         <div id=\"centeredContent\">
         ";
-        // line 44
+        // line 43
         $this->displayBlock('content', $context, $blocks);
-        // line 45
+        // line 44
         echo "    </div>
     <footer>
         <p class=\"text-center col-md-12\"r style=\"padding-top: 10px\">
@@ -95,7 +93,7 @@ class __TwigTemplate_87a86df006dd2202e643b264156f3e573238b8b43873d89825885252259
         echo " ";
     }
 
-    // line 44
+    // line 43
     public function block_content($context, array $blocks = array())
     {
     }
@@ -107,7 +105,7 @@ class __TwigTemplate_87a86df006dd2202e643b264156f3e573238b8b43873d89825885252259
 
     public function getDebugInfo()
     {
-        return array (  99 => 44,  93 => 11,  87 => 6,  76 => 45,  74 => 44,  70 => 42,  39 => 12,  37 => 11,  29 => 6,  22 => 1,);
+        return array (  97 => 43,  91 => 11,  85 => 6,  74 => 44,  72 => 43,  39 => 12,  37 => 11,  29 => 6,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -160,7 +158,6 @@ class __TwigTemplate_87a86df006dd2202e643b264156f3e573238b8b43873d89825885252259
                 <p>Lorem ipsum dolores erratum</p>
             </div>
         </header>
-        {#=========================   ================================== #}
 
         <div id=\"centeredContent\">
         {% block content %}{% endblock %}
