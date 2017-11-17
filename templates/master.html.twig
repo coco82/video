@@ -7,10 +7,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <link href="/css/bootstrap.min.css" type="text/css" rel="stylesheet" >
+        <link href="/css/font-awesome.min.css" type="text/css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="/css/stylesheet.css" type="text/css" rel="stylesheet">
         {% block headextra %} {% endblock %}
     </head>
     <body>
+
         <nav class="navbar navbar-custom">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -20,18 +23,19 @@
                     <div class="input-group">
                         <input type="search" placeholder="Search..." class="form-control">
                         <div class="input-group-btn">
-                            <button class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                            <button class="btn btn-default"><span class='fa fa-search'></span></button>
                         </div>
                     </div>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Video 1</a></li>
-                    <li><a href="#">Video 2</a></li>
-                    <li><a href="#">Video 3</a></li>                    
+                    <li><a href="#">Upload</a></li>
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Join</a></li>                    
                 </ul>                                                
             </div>
         </nav>
+
         <header>
             <div class="text-center">
                 <h1>VIDEO ARTURO ALVARADO</h1>
@@ -42,9 +46,9 @@
         <div id="centeredContent">
         {% block content %}{% endblock %}
     </div>
-    <footer>
-        <p class="text-center col-md-12"r style="padding-top: 10px">
-            <small>© Copyright Arturo Alvarado, 2017. All rights reserved.</small></p>
-    </footer>
+    <div class='padding-65'></div>
+    <div class='navbar navbar-inverse navbar-fixed-bottom'>
+        <p class="text-center footer"><small>© Copyright Arturo Alvarado, 2017. All rights reserved.</small></p>
+    </div>
 </body>
 </html>

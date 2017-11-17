@@ -105,7 +105,7 @@ $app->post('/register', function() use ($app) {
     }
 });
 
-// Home
+// Home | Index
 $app->get('/home', function() use ($app) {
     $app->render('home.html.twig');
 });
@@ -115,18 +115,22 @@ $app->get('/videos', function() use ($app) {
     $app->render('videos.html.twig');
 });
 
-// 2nd page
-$app->get('/videos', function() use ($app) {
-    $app->render('videos.html.twig');
+// 2nd page ??
+$app->get('/video2', function() use ($app) {
+    $app->render('video2.html.twig');
 });
 
-
-// 3rt Page
-$app->get('/products', function() use ($app) {
-    $app->render('products.html.twig');
+// Player
+$app->get('/video3', function() use ($app) {
+    $app->render('video3.html.twig');
 });
 
-// 4rt Page
+// Register
+$app->get('/users', function() use ($app) {
+    $app->render('users.html.twig');
+});
+
+// Upload
 $app->get('/users', function() use ($app) {
     $app->render('users.html.twig');
 });

@@ -1,25 +1,45 @@
 {% extends "master.html.twig" %}
 
-{% block title %}Product list{% endblock %}
+{% block title %}Home{% endblock %}
 
 {% block content %}
 
-    <div class="3">
+    <div class='container-fluid'>
+        <div class='row'>
+            <div class='col-md-2'>
+                <div class='page-header' style='margin-top: 0;'>
+                    <h3>Categories</h3>
+                </div>
+                <div class='vid-sidebar-list'>            
+                    <a href='#' class='vid-sidebar-list-item'>
+                        <div class='col-md-3'></div><span class='fa fa-home'></span>Home</a>
+                    <a href='#' class='vid-sidebar-list-item'>
+                        <div class='col-md-3'></div><span class='fa fa-cogs'></span>Technology</a>
+                    <a href='#' class='vid-sidebar-list-item'>
+                        <div class='col-md-3'></div><span class='fa fa-car'></span>Health</a>
+                    <a href='#' class='vid-sidebar-list-item'>
+                        <div class='col-md-3'></div><span class='fa fa-flask'></span>Science</a>
+                </div>
+                <div class='page-header' style='margin-top: 10px;'>
+                    <h3>My Account</h3>
+                </div>
+                <div class='vid-sidebar-list'>            
+                    <a href='#' class='vid-sidebar-list-item'>
+                        <div class='col-md-3'></div><span class='fa fa-desktop'></span>My Channel</a>
+                    <a href='#' class='vid-sidebar-list-item'>
+                        <div class='col-md-3'></div><span class='fa fa-list-alt'></span>My Playlist</a>
+                    <a href='#' class='vid-sidebar-list-item'>
+                        <div class='col-md-3'></div><span class='fa fa-heart'></span>My Liked Videos</a>
+                    <a href='#' class='vid-sidebar-list-item'>
+                        <div class='col-md-3'></div><span class='fa fa-plus-square'></span>My Channels</a>
 
+                </div>
+            </div>
+            <div class='col-md-10'>
+                <div class='jumbotron'></div>
+            </div>
+        </div>
     </div>
-
-    <table border="1">
-        <tr><th>id</th><th>name</th><th>description</th><th>image</th><th>operations</th></tr>
-                {% for p in productList %}
-            <tr><td>{{p.id}}</td>
-                <td>{{p.name}}</td>
-                <td>{{p.description}}</td>
-                <td><img src="/{{p.imagePath}}" width="40"></td>
-                <td><a href="/admin/product/edit/{{p.id}}">edit</a>
-                    <a href="/admin/product/delete/{{p.id}}">delete</a>
-                </td></tr>
-            {% endfor %}
-    </table>
 
     <div class="container-fluid">
         <div class="col-md-12">
@@ -72,6 +92,5 @@
             <a href="/products/{{page}}">{{page}}</a> 
         {% endfor %}
     </div>
-
 
 {% endblock %}

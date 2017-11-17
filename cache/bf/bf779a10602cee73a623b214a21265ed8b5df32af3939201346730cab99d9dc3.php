@@ -31,13 +31,16 @@ class __TwigTemplate_87a86df006dd2202e643b264156f3e573238b8b43873d89825885252259
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">
         <link href=\"/css/bootstrap.min.css\" type=\"text/css\" rel=\"stylesheet\" >
+        <link href=\"/css/font-awesome.min.css\" type=\"text/css\" rel=\"stylesheet\" >
+        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">
         <link href=\"/css/stylesheet.css\" type=\"text/css\" rel=\"stylesheet\">
         ";
-        // line 11
+        // line 13
         $this->displayBlock('headextra', $context, $blocks);
-        // line 12
+        // line 14
         echo "    </head>
     <body>
+
         <nav class=\"navbar navbar-custom\">
             <div class=\"container-fluid\">
                 <div class=\"navbar-header\">
@@ -47,18 +50,19 @@ class __TwigTemplate_87a86df006dd2202e643b264156f3e573238b8b43873d89825885252259
                     <div class=\"input-group\">
                         <input type=\"search\" placeholder=\"Search...\" class=\"form-control\">
                         <div class=\"input-group-btn\">
-                            <button class=\"btn btn-default\"><span class=\"glyphicon glyphicon-search\"></span></button>
+                            <button class=\"btn btn-default\"><span class='fa fa-search'></span></button>
                         </div>
                     </div>
                 </div>
                 <ul class=\"nav navbar-nav navbar-right\">
                     <li class=\"active\"><a href=\"#\">Home</a></li>
-                    <li><a href=\"#\">Video 1</a></li>
-                    <li><a href=\"#\">Video 2</a></li>
-                    <li><a href=\"#\">Video 3</a></li>                    
+                    <li><a href=\"#\">Upload</a></li>
+                    <li><a href=\"#\">Sign In</a></li>
+                    <li><a href=\"#\">Join</a></li>                    
                 </ul>                                                
             </div>
         </nav>
+
         <header>
             <div class=\"text-center\">
                 <h1>VIDEO ARTURO ALVARADO</h1>
@@ -68,14 +72,14 @@ class __TwigTemplate_87a86df006dd2202e643b264156f3e573238b8b43873d89825885252259
 
         <div id=\"centeredContent\">
         ";
-        // line 43
+        // line 47
         $this->displayBlock('content', $context, $blocks);
-        // line 44
+        // line 48
         echo "    </div>
-    <footer>
-        <p class=\"text-center col-md-12\"r style=\"padding-top: 10px\">
-            <small>© Copyright Arturo Alvarado, 2017. All rights reserved.</small></p>
-    </footer>
+    <div class='padding-65'></div>
+    <div class='navbar navbar-inverse navbar-fixed-bottom'>
+        <p class=\"text-center footer\"><small>© Copyright Arturo Alvarado, 2017. All rights reserved.</small></p>
+    </div>
 </body>
 </html>
 ";
@@ -87,13 +91,13 @@ class __TwigTemplate_87a86df006dd2202e643b264156f3e573238b8b43873d89825885252259
         echo "Default";
     }
 
-    // line 11
+    // line 13
     public function block_headextra($context, array $blocks = array())
     {
         echo " ";
     }
 
-    // line 43
+    // line 47
     public function block_content($context, array $blocks = array())
     {
     }
@@ -105,7 +109,7 @@ class __TwigTemplate_87a86df006dd2202e643b264156f3e573238b8b43873d89825885252259
 
     public function getDebugInfo()
     {
-        return array (  97 => 43,  91 => 11,  85 => 6,  74 => 44,  72 => 43,  39 => 12,  37 => 11,  29 => 6,  22 => 1,);
+        return array (  101 => 47,  95 => 13,  89 => 6,  78 => 48,  76 => 47,  41 => 14,  39 => 13,  29 => 6,  22 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -127,10 +131,13 @@ class __TwigTemplate_87a86df006dd2202e643b264156f3e573238b8b43873d89825885252259
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no\">
         <link href=\"/css/bootstrap.min.css\" type=\"text/css\" rel=\"stylesheet\" >
+        <link href=\"/css/font-awesome.min.css\" type=\"text/css\" rel=\"stylesheet\" >
+        <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">
         <link href=\"/css/stylesheet.css\" type=\"text/css\" rel=\"stylesheet\">
         {% block headextra %} {% endblock %}
     </head>
     <body>
+
         <nav class=\"navbar navbar-custom\">
             <div class=\"container-fluid\">
                 <div class=\"navbar-header\">
@@ -140,18 +147,19 @@ class __TwigTemplate_87a86df006dd2202e643b264156f3e573238b8b43873d89825885252259
                     <div class=\"input-group\">
                         <input type=\"search\" placeholder=\"Search...\" class=\"form-control\">
                         <div class=\"input-group-btn\">
-                            <button class=\"btn btn-default\"><span class=\"glyphicon glyphicon-search\"></span></button>
+                            <button class=\"btn btn-default\"><span class='fa fa-search'></span></button>
                         </div>
                     </div>
                 </div>
                 <ul class=\"nav navbar-nav navbar-right\">
                     <li class=\"active\"><a href=\"#\">Home</a></li>
-                    <li><a href=\"#\">Video 1</a></li>
-                    <li><a href=\"#\">Video 2</a></li>
-                    <li><a href=\"#\">Video 3</a></li>                    
+                    <li><a href=\"#\">Upload</a></li>
+                    <li><a href=\"#\">Sign In</a></li>
+                    <li><a href=\"#\">Join</a></li>                    
                 </ul>                                                
             </div>
         </nav>
+
         <header>
             <div class=\"text-center\">
                 <h1>VIDEO ARTURO ALVARADO</h1>
@@ -162,10 +170,10 @@ class __TwigTemplate_87a86df006dd2202e643b264156f3e573238b8b43873d89825885252259
         <div id=\"centeredContent\">
         {% block content %}{% endblock %}
     </div>
-    <footer>
-        <p class=\"text-center col-md-12\"r style=\"padding-top: 10px\">
-            <small>© Copyright Arturo Alvarado, 2017. All rights reserved.</small></p>
-    </footer>
+    <div class='padding-65'></div>
+    <div class='navbar navbar-inverse navbar-fixed-bottom'>
+        <p class=\"text-center footer\"><small>© Copyright Arturo Alvarado, 2017. All rights reserved.</small></p>
+    </div>
 </body>
 </html>
 ", "master.html.twig", "C:\\xampp\\htdocs\\video\\templates\\master.html.twig");

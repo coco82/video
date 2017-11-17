@@ -40,7 +40,7 @@ class __TwigTemplate_a1a4a7cb669e5cc626853b9e58bb073798ccb3ba1600776cbf7d466b627
         <div class=\"col-md-12\">
             <nav class=\"navbar navbar-sub\">
                 <ul class=\"nav navbar-nav\">
-                    <li><a href=\"#\">Create Video</a></li>
+                    <li><a href=\"#\">Upload Video</a></li>
                     <li><a href=\"#\">Read Video</a></li>
                     <li><a href=\"#\">Update Video</a></li>
                     <li><a href=\"#\">Delete Video</a></li>
@@ -140,7 +140,7 @@ class __TwigTemplate_a1a4a7cb669e5cc626853b9e58bb073798ccb3ba1600776cbf7d466b627
         <div class=\"col-md-12\">
             <nav class=\"navbar navbar-sub\">
                 <ul class=\"nav navbar-nav\">
-                    <li><a href=\"#\">Create Video</a></li>
+                    <li><a href=\"#\">Upload Video</a></li>
                     <li><a href=\"#\">Read Video</a></li>
                     <li><a href=\"#\">Update Video</a></li>
                     <li><a href=\"#\">Delete Video</a></li>
