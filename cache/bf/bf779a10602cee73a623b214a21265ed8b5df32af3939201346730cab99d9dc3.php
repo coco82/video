@@ -56,16 +56,16 @@ class __TwigTemplate_87a86df006dd2202e643b264156f3e573238b8b43873d89825885252259
                 </div>
                 <ul class=\"nav navbar-nav navbar-right\">
                     <li class=\"active\"><a href=\"#\">Home</a></li>
-                    <li><a href=\"#\">Upload</a></li>
+                    <li><a href=\"#\">Player</a></li>
                     <li><a href=\"#\">Sign In</a></li>
-                    <li><a href=\"#\">Join</a></li>                    
+                    <li><a href=\"#\">Register</a></li>                    
                 </ul>                                                
             </div>
         </nav>
 
         <header>
             <div class=\"text-center\">
-                <h1>VIDEO ARTURO ALVARADO</h1>
+                <h1>VIDEO PROJECT</h1>
                 <p>Lorem ipsum dolores erratum</p>
             </div>
         </header>
@@ -153,16 +153,16 @@ class __TwigTemplate_87a86df006dd2202e643b264156f3e573238b8b43873d89825885252259
                 </div>
                 <ul class=\"nav navbar-nav navbar-right\">
                     <li class=\"active\"><a href=\"#\">Home</a></li>
-                    <li><a href=\"#\">Upload</a></li>
+                    <li><a href=\"#\">Player</a></li>
                     <li><a href=\"#\">Sign In</a></li>
-                    <li><a href=\"#\">Join</a></li>                    
+                    <li><a href=\"#\">Register</a></li>                    
                 </ul>                                                
             </div>
         </nav>
 
         <header>
             <div class=\"text-center\">
-                <h1>VIDEO ARTURO ALVARADO</h1>
+                <h1>VIDEO PROJECT</h1>
                 <p>Lorem ipsum dolores erratum</p>
             </div>
         </header>

@@ -35,7 +35,19 @@ class __TwigTemplate_61df279a3d719afa596219f25be49b5bc06ace0bbca0456ba8ab66aed85
     public function block_content($context, array $blocks = array())
     {
         // line 6
-        echo "
+        echo "    <div class=\"container-fluid\">
+        <div class=\"col-md-12\">
+            <nav class=\"navbar navbar-sub\">
+                <ul class=\"nav navbar-nav\">
+                    <li><a href=\"#\">Upload Video</a></li>
+                    <li><a href=\"#\">Read Video</a></li>
+                    <li><a href=\"#\">Update Video</a></li>
+                    <li><a href=\"#\">Delete Video</a></li>
+                </ul>                
+            </nav>            
+        </div>
+    </div>
+    
     <div class=\"col-md-4\">
         <div class=\"page-header\">
             <h2>Latest Posts</h2>
@@ -310,7 +322,19 @@ class __TwigTemplate_61df279a3d719afa596219f25be49b5bc06ace0bbca0456ba8ab66aed85
 {% block title %}Product list{% endblock %}
 
 {% block content %}
-
+    <div class=\"container-fluid\">
+        <div class=\"col-md-12\">
+            <nav class=\"navbar navbar-sub\">
+                <ul class=\"nav navbar-nav\">
+                    <li><a href=\"#\">Upload Video</a></li>
+                    <li><a href=\"#\">Read Video</a></li>
+                    <li><a href=\"#\">Update Video</a></li>
+                    <li><a href=\"#\">Delete Video</a></li>
+                </ul>                
+            </nav>            
+        </div>
+    </div>
+    
     <div class=\"col-md-4\">
         <div class=\"page-header\">
             <h2>Latest Posts</h2>

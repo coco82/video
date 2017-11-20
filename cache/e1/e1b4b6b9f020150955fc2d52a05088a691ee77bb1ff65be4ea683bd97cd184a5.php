@@ -83,16 +83,32 @@ class __TwigTemplate_bad9f3f9ef7bb6cc18cfd77633e467e37a8c076747f1d37693fa4259450
                 <div class=\"panel-heading\">Register</div>
                 <div class=\"panel-body\">
                     <form method=\"post\">
-                        Name: <input type=\"text\" name=\"name\" value=\"";
-        // line 33
+                        <div class='panel-body'>
+                            <label>Name :</label>
+                            <input type=\"text\" name=\"name\" value=\"";
+        // line 35
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["v"]) ? $context["v"] : null), "name", array()), "html", null, true);
         echo "\"><br>
-                        Email: <input type=\"email\" name=\"email\" value=\"";
-        // line 34
+                        </div>
+
+                        <div class='panel-body'>
+                            <label>Email :</label>
+                            <input type=\"email\" name=\"email\" value=\"";
+        // line 40
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["v"]) ? $context["v"] : null), "email", array()), "html", null, true);
         echo "\" placeholder=\"you@domain.com\"><span id=\"isTaken\"></span><br>
-                        Password: <input type=\"password\" name=\"pass1\"><br>
-                        Password (repeated): <input type=\"password\" name=\"pass2\"><br>
+                        </div>    
+
+                        <div class='panel-body'>
+                            <label>Password :</label>
+                            <input type=\"password\" name=\"pass1\"><br>
+                        </div>
+
+                        <div class='panel-body'>
+                            <label>Password (repeated):</label>
+                            <input type=\"password\" name=\"pass2\"><br>
+                        </div>
+
                         <input type=\"submit\" value=\"Register\">
                     </form>
 
@@ -116,7 +132,7 @@ class __TwigTemplate_bad9f3f9ef7bb6cc18cfd77633e467e37a8c076747f1d37693fa4259450
 
     public function getDebugInfo()
     {
-        return array (  92 => 34,  88 => 33,  79 => 26,  75 => 24,  66 => 22,  62 => 21,  59 => 20,  56 => 19,  53 => 18,  39 => 6,  36 => 5,  30 => 3,  11 => 1,);
+        return array (  98 => 40,  90 => 35,  79 => 26,  75 => 24,  66 => 22,  62 => 21,  59 => 20,  56 => 19,  53 => 18,  39 => 6,  36 => 5,  30 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -161,10 +177,26 @@ class __TwigTemplate_bad9f3f9ef7bb6cc18cfd77633e467e37a8c076747f1d37693fa4259450
                 <div class=\"panel-heading\">Register</div>
                 <div class=\"panel-body\">
                     <form method=\"post\">
-                        Name: <input type=\"text\" name=\"name\" value=\"{{v.name}}\"><br>
-                        Email: <input type=\"email\" name=\"email\" value=\"{{v.email}}\" placeholder=\"you@domain.com\"><span id=\"isTaken\"></span><br>
-                        Password: <input type=\"password\" name=\"pass1\"><br>
-                        Password (repeated): <input type=\"password\" name=\"pass2\"><br>
+                        <div class='panel-body'>
+                            <label>Name :</label>
+                            <input type=\"text\" name=\"name\" value=\"{{v.name}}\"><br>
+                        </div>
+
+                        <div class='panel-body'>
+                            <label>Email :</label>
+                            <input type=\"email\" name=\"email\" value=\"{{v.email}}\" placeholder=\"you@domain.com\"><span id=\"isTaken\"></span><br>
+                        </div>    
+
+                        <div class='panel-body'>
+                            <label>Password :</label>
+                            <input type=\"password\" name=\"pass1\"><br>
+                        </div>
+
+                        <div class='panel-body'>
+                            <label>Password (repeated):</label>
+                            <input type=\"password\" name=\"pass2\"><br>
+                        </div>
+
                         <input type=\"submit\" value=\"Register\">
                     </form>
 

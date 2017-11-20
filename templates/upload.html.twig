@@ -2,28 +2,56 @@
 
 {% block title %}Upload{% endblock %}
 
-{% block content %}  
-<html>
-<head>
-    <script type='text/javascript' src='jwplayer.js'></script>
-<title>Video Uploader</title>
-</head>
-<body>
-<h1>Video Uploader</h1>
-<form method='post' enctype='multipart/form-data'>
-Name:<input type='text' name='vid_name'><br />
-Video: <input type='video' name='vid'><br />
-<input type='submit'>
-</form>
-<hr />
-<h3>View Videos</h3>
-<?php
-$result = mysql_query("SELECT * FROM vid_detail");
-while($row = mysql_fetch_array($result)){
-$name = $row['name'];
-$vid_code = $row['code'];
-echo'<h3>' . $name . '</h3><br />' . $vid_code . '<br />';
-}
-</body>
-</html>
+{% block headextra %}
+
 {% endblock %}
+
+{% block content %}  
+
+    <div class="row container-fluid">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="panel panel-default">
+                <br>
+                <div class="panel-heading">Video Uploader</div>
+
+                <div class="panel-body">
+                    <form action='upload' method="post" enctype='multipart/form'>
+                        
+                        <div class='panel-body'>
+                        <label>Title :</label>
+                        <textarea class='form-control'></textarea><br>
+                        </div>
+                        
+                        <div class='panel-body'>
+                        <label>Description :</label>
+                        <textarea class='form-control'></textarea><br>
+                        </div>
+                        
+                        <div class='panel-body'>
+                        <label>Select Playlist :</label>
+                        <textarea class='form-control'></textarea><br>
+                        </div>
+                        
+                                                <div class='panel-body'>
+                        <label>Select File :</label>
+                        <input type="file" name="fileToUpload" >
+                        </div>
+                        
+                        <div class='panel-body'>
+                        <label>Select File :</label>
+                        <input type="submit" value="Upload Video" name="submit">
+                        </div>
+                        
+                        <div class='panel-body'>
+                        <label>Status :</label>
+                        <option selected>Public</option>
+                        <option>Unlisted</option>
+                        <option>Private</option>
+                        </div>
+                        
+                    </form>
+
+                    </div>
+                {% endblock %}
+
+

@@ -69,10 +69,10 @@ $app->post('/register', function() use ($app) {
     $email = $app->request()->post('email');
     $pass1 = $app->request()->post('pass1');
     $pass2 = $app->request()->post('pass2');
-    //
+//
     $values = array('name' => $name, 'email' => $email);
     $errorList = array();
-    //
+//
     if (strlen($name) < 2 || strlen($name) > 50) {
         $values['name'] = '';
         array_push($errorList, "Name must be between 2 and 50 characters long");
@@ -94,7 +94,7 @@ $app->post('/register', function() use ($app) {
             array_push($errorList, "Password must be between 2 and 50 characters long");
         }
     }
-    //
+//
     if ($errorList) { // 3. failed submission
         $app->render('register.html.twig', array(
             'errorList' => $errorList,
@@ -105,34 +105,76 @@ $app->post('/register', function() use ($app) {
     }
 });
 
-// Home | Index
-$app->get('/home', function() use ($app) {
-    $app->render('home.html.twig');
+// Public | Home
+$app->get('/video', function() use ($app) {
+    $app->render('video.html.twig');
 });
 
-// Videos
-$app->get('/videos', function() use ($app) {
-    $app->render('videos.html.twig');
+// Public | Register
+$app->get('/register', function() use ($app) {
+    $app->render('register.html.twig');
 });
 
-// 2nd page ??
-$app->get('/video2', function() use ($app) {
-    $app->render('video2.html.twig');
+// Public | Player
+$app->get('/player', function() use ($app) {
+    $app->render('player.html.twig');
 });
 
-// Player
-$app->get('/video3', function() use ($app) {
-    $app->render('video3.html.twig');
+// User | Playlist
+$app->get('/playlist', function() use ($app) {
+    $app->render('playlist.html.twig');
 });
 
-// Register
-$app->get('/users', function() use ($app) {
-    $app->render('users.html.twig');
+// User | My Channel
+$app->get('/channel', function() use ($app) {
+    $app->render('mychannel.html.twig');
 });
 
-// Upload
-$app->get('/users', function() use ($app) {
-    $app->render('users.html.twig');
+// User | Upload
+$app->get('/upload', function() use ($app) {
+    $app->render('upload.html.twig');
 });
+
+$app->post('/upload3', function() use ($app) {
+// receiving a submission
+    $name = $app->request()->post('name');
+    //$age = $app->request()->post('age');
+    $values = array('name' => $name);
+    $errorList = array();
+    if (strlen($name) < 2 || strlen($name) > 50) {
+        array_push($errorList, "Name must be between 2 and 50 characters long");
+        $values['name'] = '';
+    }
+//    if (empty($age) || $age < 0 || $age > 150) {
+//        array_push($errorList, "Age must be between 1 and 150");
+//        $values['age'] = '';
+//    }
+    if ($errorList) {
+// 3. failed submission
+        $app->render('not_found.html.twig', array(
+            'errorList' => $errorList,
+            'v' => $values));
+    } else {
+// 2. successful submission
+        DB::insert('videos', array('name' => $name, 'age' => $age));
+        $app->render('upload_success.html.twig', array('name' => $name));
+    }
+});
+
+// User | Upload
+$app->get('/upload', function() use ($app) {
+    $app->render('upload.html.twig');
+});
+
+// User | Upload
+$app->get('/upload', function() use ($app) {
+    $app->render('upload.html.twig');
+});
+
+
+require_once 'upload.php';
+
+require_once 'account.php';
 
 $app->run();
+
